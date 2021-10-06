@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="menu">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48px"
+          viewBox="0 0 24 24"
+          width="48px"
+          fill="white"
+          class="expand"
+        >
+          <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+        </svg>
+        <ul  class="menu-list">
+          <li class="color-li">
+            <input type="color" value="#afeeee" id="colorPicker" /><a href="#"
+              ><label for="colorPicker">Color</label>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hour"></div>
+      <div class="colon">:</div>
+      <div class="minute"></div>
+    </div>
+  </body>
+</html>

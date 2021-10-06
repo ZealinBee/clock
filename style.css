@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@font-face {
+  font-family: open;
+  src: url(./Open\ 24\ Display\ St.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: paleturquoise;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: black;
+  overflow-y: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu svg {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.menu-list {
+  background: white;
+  padding: 0.5rem 1rem;
+  margin-top: 4rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform ease-in-out 300ms;
+}
+
+.show {
+  transform: scale(1, 1);
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu ul a {
+  font-size: 1.25rem;
+  color: var(--color);
+  text-decoration: none;
+}
+
+.expand:hover {
+  fill: var(--color);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1rem solid var(--color);
+  border-radius: 0.3em;
+  line-height: 0.8em;
+  font-size: 15em;
+}
+
+.hour,
+.colon,
+.minute {
+  font-family: open;
+  color: var(--color);
+  padding-bottom: 0.2em;
+}
+
+.colon {
+}
+
+.hour {
+  padding-right: 0.1em;
+  padding-left: 0.2em;
+}
+
+.minute {
+  padding-left: 0.1em;
+  padding-right: 0.2em;
+}
+
+.no-colon {
+  opacity: 0;
+}
+
+#colorPicker {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  width: 25px;
+  background-color: transparent;
+  height: 28px;
+  cursor: pointer;
+  padding: rem;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+}
+
+#colorPicker::-moz-color-swatch {
+  border-radius: 100%;
+}
+
+#colorPicker::-moz-color-swatch {
+  border-radius: 100%;
+}
+
+.color-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.expand {
+  transform: rotate(0deg);
+  transition: transform ease-in-out 300ms;
+}
+
+.flipexpand {
+  transform: rotate(180deg);
+}
