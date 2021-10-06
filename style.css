@@ -51,10 +51,12 @@ body {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform ease-in-out 300ms;
+  cursor: pointer;
 }
 
 .show {
   transform: scale(1, 1);
+  opacity: 1;
 }
 
 .menu li {
@@ -65,6 +67,11 @@ body {
   font-size: 1.25rem;
   color: var(--color);
   text-decoration: none;
+  cursor: pointer;
+}
+
+.menu label {
+  cursor: pointer;
 }
 
 .expand:hover {
