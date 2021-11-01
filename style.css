@@ -43,15 +43,20 @@ body {
 }
 
 .menu-list {
-  background: white;
-  padding: 0.5rem 1rem;
   margin-top: 4rem;
   margin-right: 1rem;
-  border-radius: 1rem;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform ease-in-out 300ms;
   cursor: pointer;
+  color: var(--color);
+}
+
+.menu-list li {
+  background: white;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .show {
@@ -74,8 +79,12 @@ body {
   cursor: pointer;
 }
 
-.expand:hover {
+.expand {
   fill: var(--color);
+}
+
+.expand:hover {
+  fill: white;
   cursor: pointer;
 }
 
@@ -97,15 +106,16 @@ body {
   padding-bottom: 0.2em;
 }
 
-.colon {
-}
-
 .hour {
   padding-right: 0.1em;
   padding-left: 0.2em;
 }
 
 .minute {
+  padding-left: 0.1em;
+  padding-right: 0.2em;
+}
+.second {
   padding-left: 0.1em;
   padding-right: 0.2em;
 }

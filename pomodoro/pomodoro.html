@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="pomodoro.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="pomodoro.js" defer></script>
+    <link rel="icon" href="../logo.png" />
+  </head>
+  <body>
+    <div class="menu">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48px"
+          viewBox="0 0 24 24"
+          width="48px"
+          fill="white"
+          class="expand"
+        >
+          <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+        </svg>
+        <ul class="menu-list">
+          <a href="../index.html"> <li class="clock"> Clock</li></a> 
+
+          <label for="colorPicker" class="colorLabel"
+            ><li class="color-li">
+              <input type="color" value="#afeeee" id="colorPicker" /><a href="#"
+                >Color
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hour"></div>
+      <div class="colon">:</div>
+      <div class="minute"></div>
+    </div>
+    <div class="start">
+      <button class="pause-btn">Pause</button>
+      <button class="start-btn">Start</button>
+      <button class="reset-btn">Reset</button>
+    </div>
+    <div class="cycle">
+      <h3 class="cycle-title">Cycles: <span class="cycle-count"></span></h3>
+    </div>
+
+    <h3 class="study-time-left study-time-hide">Study time left:</h3>
+    <h3 class="break-time-left break-time-hide">Break time left:</h3>
+    <div class="duration">
+      <div class="study-duration">
+        <h3>Study Time(in minutes)</h3>
+        <input class="study-duration-time" ></input>
+      </div>
+      <div class="break-duration">
+        <h3>Break Time(in minutes)</h3>
+        <input class="break-duration-time" ></input>
+      </div>
+    </div>
+
+    <audio src="audio/pause.mp3" class="pause-sound"></audio>
+    <audio src="audio/start.mp3" class="start-sound"></audio>
+    <audio src="audio/reset.mp3" class="reset-sound"></audio>
+    <audio src="audio/done.mp3" class="done-sound"></audio>
+  </body>
+</html>

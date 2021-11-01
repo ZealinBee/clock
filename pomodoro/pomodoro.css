@@ -1,0 +1,78 @@
+.start {
+  position: absolute;
+  bottom: 4em;
+}
+
+.start button {
+  background: transparent;
+  font-family: "poppins";
+  font-size: 1.5em;
+  color: var(--color);
+  border: none;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+.start button:hover {
+  color: white;
+}
+
+.cycle {
+  position: absolute;
+  color: var(--color);
+  bottom: 5%;
+  right: 5%;
+  font-family: "poppins";
+}
+
+.study-time-left,
+.break-time-left {
+  position: absolute;
+  color: var(--color);
+  font-family: "poppins";
+  font-size: 1.5rem;
+  top: 15%;
+}
+
+.study-time-hide {
+  display: none;
+}
+
+.break-time-hide {
+  display: none;
+}
+
+.duration {
+  position: absolute;
+  color: var(--color);
+  font-family: "poppins";
+  left: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-duration,
+.break-duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.duration h3 {
+  margin: 0.5rem;
+}
+
+.study-duration-time,
+.break-duration-time {
+  border: 3px var(--color) solid;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  width: 25%;
+  background: black;
+  color: var(--color);
+  font-family: "poppins";
+  font-size: 1.1rem;
+  text-align: center;
+}

@@ -6,9 +6,11 @@ const expand = document.querySelector('.expand')
 const menuLi = document.querySelector('.menu-list')
 
 
+
 expand.addEventListener('click', function() {
   expand.classList.toggle('flipexpand')
   menuLi.classList.toggle('show')
+  
 })
 colorPicker.addEventListener('change', changeColor)
 colorPicker.addEventListener('mousemove', changeColor)
