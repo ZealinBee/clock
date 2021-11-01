@@ -50,6 +50,7 @@
   top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .study-duration,
@@ -75,4 +76,8 @@
   font-family: "poppins";
   font-size: 1.1rem;
   text-align: center;
+}
+
+.set-time-click {
+  cursor: pointer;
 }

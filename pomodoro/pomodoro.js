@@ -16,6 +16,7 @@ const breakTime = document.querySelector(".break-time-left");
 const doneSound = document.querySelector('.done-sound')
 let studyDuration = document.querySelector('.study-duration-time')
 let breakDuration = document.querySelector('.break-duration-time')
+const setTime = document.querySelector('.set-time-click')
 
 let startTimer;
 let studying = true
@@ -44,6 +45,9 @@ pauseBtn.addEventListener("click", pauseTime);
 resetBtn.addEventListener("click", resetTime);
 colorPicker.addEventListener("change", changeColor);
 colorPicker.addEventListener("mousemove", changeColor);
+setTime.addEventListener('click', resetTime)
+
+
 
 function changeColor() {
   document.documentElement.style.setProperty("--color", this.value);
@@ -72,7 +76,6 @@ function resetTime() {
   resetSound.play();
   second.textContent = 0
   minute.textContent = studyDuration.value;
-  cycleCount.textContent = '';
 }
 
 function pomodoro() {
