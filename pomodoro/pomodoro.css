@@ -70,7 +70,7 @@
   border: 3px var(--color) solid;
   border-radius: 1rem;
   padding: 0.3rem 1rem;
-  width: 25%;
+  width: 35%;
   background: black;
   color: var(--color);
   font-family: "poppins";
@@ -80,4 +80,59 @@
 
 .set-time-click {
   cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .duration {
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .start {
+    bottom: 25%;
+  }
+
+  .start button {
+    font-size: 1.2rem;
+    color: var(--color);
+    border: none;
+    cursor: pointer;
+    padding: 0 1em;
+  }
+
+  .study-duration-time,
+  .break-duration-time {
+    border: 2px var(--color) solid;
+    border-radius: 1rem;
+    padding: 0.1rem 0.8rem;
+    width: 25%;
+    background: black;
+    color: var(--color);
+    font-family: "poppins";
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .study-duration,
+  .break-duration {
+    margin: 0.5em;
+  }
+
+  .cycle {
+    font-size: 0.8rem;
+    right: 10%;
+  }
+
+  .study-time-left,
+  .break-time-left {
+    font-size: 1.2rem;
+    display: none;
+  }
 }

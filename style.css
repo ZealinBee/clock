@@ -162,3 +162,10 @@ body {
 .flipexpand {
   transform: rotate(180deg);
 }
+
+@media (max-width: 800px) {
+  .container {
+    font-size: 9em;
+    border: 0.7rem solid var(--color);
+  }
+}

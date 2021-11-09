@@ -17,19 +17,19 @@ const doneSound = document.querySelector('.done-sound')
 let studyDuration = document.querySelector('.study-duration-time')
 let breakDuration = document.querySelector('.break-duration-time')
 const setTime = document.querySelector('.set-time-click')
+const settings = document.querySelector('.settings')
 
 let startTimer;
 let studying = true
 let setMinute = 25
-let setSecond = 0;
+let setSecond = 00;
 let setBreakMinute = 10
 let setBreakSecond = 0;
 
 studyDuration.value = 25
 breakDuration.value = 5
 minute.textContent = studyDuration.value
-second.textContent = 00
-
+second.textContent = "00"
 
 expand.addEventListener("click", function () {
   expand.classList.toggle("flipexpand");
@@ -46,7 +46,9 @@ resetBtn.addEventListener("click", resetTime);
 colorPicker.addEventListener("change", changeColor);
 colorPicker.addEventListener("mousemove", changeColor);
 setTime.addEventListener('click', resetTime)
+settings.addEventListener('click', function(){
 
+})
 
 
 function changeColor() {
@@ -74,7 +76,7 @@ function resetTime() {
   startTimer = undefined
   resetBtn.currentTime = 0;
   resetSound.play();
-  second.textContent = 0
+  second.textContent = "00"
   minute.textContent = studyDuration.value;
 }
 
@@ -89,6 +91,10 @@ function pomodoro() {
   } else if (minute.textContent != 0 && second.textContent == 0) {
     second.textContent = 59;
     minute.textContent--;
+  }
+
+  if (second.textContent < 10){
+    second.textContent = "0" + second.textContent
   }
   
   if (minute.textContent == 0 && second.textContent == 0 && studying == true) {
