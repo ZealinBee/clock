@@ -91,8 +91,12 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 100%;
     font-size: 0.8rem;
+  }
+
+  .expand {
+    z-index: 100;
   }
 
   .start {
